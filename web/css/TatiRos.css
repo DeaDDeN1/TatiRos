@@ -1,0 +1,101 @@
+.tt{
+	width: auto;
+	height: 100vh;
+
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+
+	background-image: radial-gradient(circle, #0bb6da, #00b5c8, #00b3ac, #00ae88, #00a85f, #00a94c, #0eaa35, #22ab0e, #20b612, #1dc117, #17cd1b, #0ed820);
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.name{
+	color: #00FFF4;
+	font-family: 'Train One', cursive;
+	font-size: 50px;
+}
+
+#rec, #rec1{
+	color: #00FFF4;
+	font-family: 'Train One', cursive;
+	font-size: 25px;
+	outline: none;
+	border: none;
+	background: none;
+	min-width: 10px;
+}
+
+.game{
+	width: 600px;
+	height: 200px;
+	border-bottom: 1px solid green;
+	margin: auto;
+	background-image: linear-gradient(to bottom, #00fff4, #71feff, #bbfaff, #ebf9ff, #ffffff);
+
+	line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+
+    border-radius: 20px;
+
+}
+
+#TatiRos{
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/TatiRos.png);
+	background-size: 50px 50px;
+	position: relative;
+	top: 150px;
+}
+
+#flower{
+	width: 20px;
+	height: 40px;
+	background-image: url(../img/flower.png);
+	background-size: 20px 40px;
+	position: relative;
+	top: 110px;
+	left: 580px;
+}
+
+.flower{
+	animation: flowerMov 1.5s infinite linear;
+}
+
+@keyframes flowerMov{
+	0%{
+		left: 580px;
+	}
+
+	100%{
+		left: -20px;
+	}
+}
+
+.jump{
+	animation: jump 0.5s linear;
+}
+
+@keyframes jump{
+	0%{
+		top: 150px;
+	}
+	30%{
+		top: 130px;
+	}
+	50%{
+		top: 80px;
+	}
+	80%{
+		top: 130px;
+	}
+	100%{
+		top: 150px;
+	}
+}
